@@ -9,7 +9,7 @@ from retail import *
 from telebot.types import CallbackQuery, Message, KeyboardButton, ReplyKeyboardMarkup
 from db import DB
 
-bot = telebot.TeleBot('5876007095:AAFH0NQZajgiG2lHSEby45JviTPm7hVdjho')
+bot = telebot.TeleBot('токен_бота')
 db = DB()
 
 @bot.message_handler(commands=['start'])
