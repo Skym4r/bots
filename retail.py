@@ -3,7 +3,7 @@ import telebot
 import requests
 import json
 
-client = retailcrm.v5('https://astraflo.retailcrm.ru','nzZBf9ItHjkSL5KWRPb4AwlCXH0AxGAN') 
+client = retailcrm.v5('url_retailCRM','API_TOKEN_RETAILCRM') 
 
 
 def curier(numb):
@@ -118,7 +118,7 @@ def deliveredorder(id):
 def load_photo(order_id, file):
     #answer = client.files_upload(file_path, order['site'])
 
-    url = '%s/api/v5/files/upload?apiKey=%s' % ('https://astraflo.retailcrm.ru', 'nzZBf9ItHjkSL5KWRPb4AwlCXH0AxGAN')
+    url = '%s/api/v5/files/upload?apiKey=%s' % ('url_retailCRM','API_TOKEN_RETAILCRM')
 
     response = requests.post(
         url=url,
